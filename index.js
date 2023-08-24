@@ -34,7 +34,7 @@ const generateLogo = () => {
         console.error('Error: Text must be between 1 and 3 characters.')
       } else {
         console.log(response)
-        createFile('./logos/logo.svg', response)
+        createFile('logo.svg', response)
       }
     })
     .catch(err => console.error(err))
