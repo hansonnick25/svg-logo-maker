@@ -1,5 +1,6 @@
 const inquirer = require('inquirer')
 const fs = require('fs')
+const { Circle, Triangle, Square } = require('./lib/shapes')
 
 const generateLogo = () => {
   inquirer
@@ -19,7 +20,7 @@ const generateLogo = () => {
         name: 'logoShape',
         message:
           'Which logo shape would you like? (choose circle, triangle, or square)',
-        choices: ['Triangle', 'Square', 'Circle']
+        choices: ['Circle', 'Triangle', 'Square']
       },
       {
         type: 'input',
